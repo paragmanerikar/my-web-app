@@ -25,13 +25,7 @@ public class HomeServlet extends HttpServlet {
         resp.setStatus(200);
         resp.setContentType("application/json");
 
-        String json = """
-            {
-                "name": "Parag M",
-                "gender" : "M",
-                "code" : 22565689
-            }
-        """;
+        String json = "{\"name\": \"Parag M\",\"gender\" : \"M\",\"code\" : 265689}";
         resp.getWriter().println(json);
         resp.flushBuffer();
     }
